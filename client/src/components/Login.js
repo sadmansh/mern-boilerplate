@@ -28,7 +28,7 @@ class Login extends Component {
 	render() {
 		return (
 			<div>
-				Welcome to SnapCharge!
+				Hello world!
 
 				<form onSubmit={this.handleSubmit}>
 					<input type="email" name="email" value={this.state.email} onChange={this.handleChange} />

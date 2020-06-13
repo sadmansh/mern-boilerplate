@@ -23,12 +23,3 @@ export const registerUser = (user) => async dispatch => {
 		console.error(error)
 	}
 }
-
-export const fetchCountries = () => async dispatch => {
-	try {
-		const res = await axios.get('http://localhost:5000/api/user/countries')
-		dispatch({ type: FETCH_COUNTRIES, payload: res.data.countries })
-	} catch (error) {
-		console.error(error.message)
-	}
-}
